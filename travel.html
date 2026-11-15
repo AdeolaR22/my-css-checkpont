@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WanderLagos | Travel Agency</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    .hero {
+      min-height: 75vh;
+      background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.55);
+      padding: 5rem 2rem;
+      width: 100%;
+    }
+
+    .destination-img {
+      height: 220px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <i class="bi bi-airplane-engines me-2"></i>WanderLagos
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#travelNav" aria-controls="travelNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="travelNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-overlay">
+      <div class="container">
+        <h1 class="display-3 fw-bold">Explore Beautiful Places</h1>
+        <p class="lead mb-4">Plan unforgettable trips with trusted guides and curated tour packages.</p>
+        <a href="#destinations" class="btn btn-primary btn-lg px-4">Start Exploring</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section id="destinations" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Popular Destinations</h2>
+        <p class="text-muted">Choose your next adventure from our featured locations.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
+                 class="card-img-top destination-img" alt="Bali beach">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Bali, Indonesia</h5>
+              <p class="card-text">Beaches, temples, rice terraces, and vibrant local culture.</p>
+              <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80"
+                 class="card-img-top destination-img" alt="Paris">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Paris, France</h5>
+              <p class="card-text">Iconic landmarks, museums, cafés, and unforgettable city views.</p>
+              <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=800&q=80"
+                 class="card-img-top destination-img" alt="Dubai">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Dubai, UAE</h5>
+              <p class="card-text">Modern skyscrapers, desert adventures, shopping, and luxury dining.</p>
+              <a href="#" class="btn btn-outline-primary mt-auto">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tours -->
+  <section id="tours" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Tour Packages</h2>
+        <p class="text-muted">Find a package that fits your travel style.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="accordion" id="tourAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#tourOne"
+                        aria-expanded="true" aria-controls="tourOne">
+                  Bali Explorer — 7 Days
+                </button>
+              </h2>
+              <div id="tourOne" class="accordion-collapse collapse show"
+                   data-bs-parent="#tourAccordion">
+                <div class="accordion-body">
+                  Enjoy beaches, temples, and a guided Ubud tour. Includes airport pickup,
+                  hotel accommodation, and daily breakfast.
+                  <a href="#" class="d-block mt-2">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#tourTwo"
+                        aria-expanded="false" aria-controls="tourTwo">
+                  Paris City Break — 5 Days
+                </button>
+              </h2>
+              <div id="tourTwo" class="accordion-collapse collapse"
+                   data-bs-parent="#tourAccordion">
+                <div class="accordion-body">
+                  Visit the Eiffel Tower, Louvre Museum, and Montmartre. Includes a Seine
+                  river cruise and central hotel stay.
+                  <a href="#" class="d-block mt-2">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#tourThree"
+                        aria-expanded="false" aria-controls="tourThree">
+                  Dubai Luxury Escape — 6 Days
+                </button>
+              </h2>
+              <div id="tourThree" class="accordion-collapse collapse"
+                   data-bs-parent="#tourAccordion">
+                <div class="accordion-body">
+                  Experience desert safaris, Burj Khalifa access, luxury shopping, and a
+                  dinner cruise.
+                  <a href="#" class="d-block mt-2">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <h2 class="fw-bold text-center mb-4">Plan Your Trip</h2>
+
+          <form>
+            <div class="mb-3">
+              <label for="travelName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="travelName" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="travelEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="travelEmail" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="destination" class="form-label">Destination of Interest</label>
+              <select class="form-select" id="destination" required>
+                <option value="" selected>Choose a destination</option>
+                <option value="bali">Bali, Indonesia</option>
+                <option value="paris">Paris, France</option>
+                <option value="dubai">Dubai, UAE</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="travelMessage" class="form-label">Message</label>
+              <textarea class="form-control" id="travelMessage" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">&copy; 2026 WanderLagos. All rights reserved.</p>
+
+      <div class="d-flex gap-3 fs-5">
+        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

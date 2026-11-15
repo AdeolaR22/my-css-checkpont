@@ -1,0 +1,206 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lagos Bites | Restaurant</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    .hero {
+      min-height: 70vh;
+      background-image: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.55);
+      padding: 4rem 2rem;
+      width: 100%;
+    }
+
+    .menu-img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .about-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Lagos Bites</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#restaurantNav" aria-controls="restaurantNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="restaurantNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-overlay">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Delicious Meals, Made Fresh</h1>
+        <p class="lead mb-4">Experience the best of Nigerian and continental cuisine in Lagos.</p>
+        <a href="#menu" class="btn btn-warning btn-lg fw-semibold">View Our Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Our Menu</h2>
+        <p class="text-muted">Fresh ingredients, bold flavours, and generous portions.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80"
+                 class="card-img-top menu-img" alt="Jollof rice">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Jollof Rice</h5>
+                <span class="badge text-bg-warning">₦4,500</span>
+              </div>
+              <p class="card-text">Smoky party jollof served with grilled chicken and fried plantain.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+                 class="card-img-top menu-img" alt="Grilled fish">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Grilled Croaker</h5>
+                <span class="badge text-bg-warning">₦8,000</span>
+              </div>
+              <p class="card-text">Whole grilled fish with pepper sauce, yam chips, and salad.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+                 class="card-img-top menu-img" alt="Pizza">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Chicken Pizza</h5>
+                <span class="badge text-bg-warning">₦7,200</span>
+              </div>
+              <p class="card-text">Wood-fired pizza topped with chicken, cheese, peppers, and onions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-12 col-md-6">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=80"
+               class="about-img" alt="Restaurant interior">
+        </div>
+
+        <div class="col-12 col-md-6">
+          <h2 class="fw-bold mb-3">About Lagos Bites</h2>
+          <p>
+            Lagos Bites is a fictional restaurant created to showcase a modern dining experience.
+            We combine locally inspired dishes with international favourites, prepared with fresh
+            ingredients and served in a relaxed, friendly space.
+          </p>
+          <p class="mb-4">
+            Whether you are stopping by for lunch, dinner with friends, or a special celebration,
+            our team is ready to make your visit memorable.
+          </p>
+          <a href="#contact" class="btn btn-dark">Book a Table</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <h2 class="fw-bold text-center mb-4">Contact Us</h2>
+
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4"
+                        placeholder="Tell us how we can help" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-warning w-100 fw-semibold">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">&copy; 2026 Lagos Bites. All rights reserved.</p>
+
+      <div class="d-flex gap-3 fs-5">
+        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
